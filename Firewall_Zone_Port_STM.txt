@@ -1,0 +1,60 @@
+  5  ifconfig ens33
+    6  firewall-cmd --reload 
+    7  systemctl restart httpd
+    8  firewall-cmd --list-all
+    9  firewall-cmd --add-port=80/tcp
+   10  firewall-cmd --list-all
+   11  ifconfig ens33
+   12  ifconfig ens36
+   13  cd /var/www/html/
+   14  ls
+   15  vi index.html 
+   16  history
+   17  cd ..
+   18  cd ~
+   19  firewall-cmd --list-all
+   20  systemctl status httpd
+   21  ifconfig
+   22  history
+   23  firewall-cmd --list-all
+   24  firewall-cmd --remove-interface=ens36 --zone=public 
+   25  firewall-cmd --list-all
+   26  firewall-cmd --add--interface=ens33 --zone=block 
+   27  firewall-cmd --add-interface=ens33 --zone=block 
+   28  firewall-cmd --reload 
+   29  firewall-cmd --add-interface=ens33 --zone=block 
+   30  systemctl restart httpd
+   31  systemctl status httpd
+   32  firewall-cmd --remove-interface=ens33 --zone=block 
+   33  firewall-cmd --list-all --zone=block
+   34  firewall-cmd --add-interface=ens33 --zone=internal
+   35  firewall-cmd --list-all
+   36  firewall-cmd --reload 
+   37  firewall-cmd --remove-interface=ens33 --zone=internal 
+   38  firewall-cmd --list-all
+   39  firewall-cmd --remove-interface=ens33 --zone=internal 
+   40  firewall-cmd --list-all
+   41  firewall-cmd --list-all --zone=internal 
+   42  firewall-cmd --add-interface=ens33 --zone=public 
+   43  firewall-cmd --list-all
+   44  ifconfig
+   45  firewall-cmd --add-interface=ens33 --zone=public 
+   46  firewall-cmd --list-all
+   47  ifup ens36
+   48  firewall-cmd --list-all
+   49  ifconfig
+   50  firewall-cmd --list-all
+   51  firewall-cmd --add-port=80/tcp
+   52  firewall-cmd --list-all
+   53  firewall-cmd --add-interface=ens36 --zone=public 
+   54  firewall-cmd --list-all
+   55  firewall-cmd --remove-interface=ens33 --zone=public 
+   56  firewall-cmd --list-all
+   57  firewall-cmd --add-interface=ens33 --zone=internal 
+   58  firewall-cmd --list-all
+   59  firewall-cmd --list-all  --zone=internal 
+
+
+============================================================================================================================================================================================================================================
+
+
